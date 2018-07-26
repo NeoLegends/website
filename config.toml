@@ -1,0 +1,42 @@
+baseURL = "https://moritzgunz.de/"
+languageCode = "en-us"
+title = "Moritz Gunz"
+languagecode = "en"
+defaultcontentlanguage = "en"
+theme = "coder"
+
+[params]
+author = "Moritz Gunz"
+info = "Full Stack Web Engineer"
+description = "Moritz Gunz' personal website"
+avatarurl = "images/profile.jpg"
+keywords = "web, developer, full, stack, personal"
+footercontent = "🌈"
+hideCredits = true
+hideCopyright = true
+custom_css = ["css/main.css"]
+
+[[params.social]]
+name = "Github"
+weight = 1
+url = "https://github.com/NeoLegends"
+
+[[params.social]]
+name = "Twitter"
+weight = 2
+url = "https://twitter.com/TheNeoLegends"
+
+[[params.social]]
+name = "E-Mail"
+weight = 3
+url = "mailto:moritz.gunz@gmail.com"
+
+[[menu.main]]
+name = "About"
+weight = 1
+url = "/about-me/"
+
+[[menu.main]]
+name = "Projects"
+weight = 2
+url = "/projects/"
