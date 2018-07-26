@@ -8,7 +8,7 @@ theme = "coder"
 [params]
 author = "Moritz Gunz"
 info = "Full Stack Web Engineer"
-description = "Moritz Gunz' personal website"
+description = "Moritz Gunz - Full Stack Web Engineer"
 avatarurl = "images/profile.jpg"
 keywords = "web, developer, full, stack, personal"
 footercontent = "🌈"
