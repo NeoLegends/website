@@ -29,7 +29,7 @@ url = "https://twitter.com/TheNeoLegends"
 [[params.social]]
 name = "E-Mail"
 weight = 3
-url = "mailto:moritz.gunz@gmail.com"
+url = "mailto:yo@moritzgunz.de"
 
 [[menu.main]]
 name = "About"
