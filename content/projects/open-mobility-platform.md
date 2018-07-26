@@ -8,7 +8,7 @@ categories: ["project"]
 
 The goal is to create a tool to ease public transport companies the creation of technical specifications. It contains an XSD editor for creating the actual specification XSD, rich-text editors for writing the verbal documentation and generates a .docx or .pdf file.
 
-The project is written in TypeScript, using React.js and material-ui for the UI components. One aspect was allowing for real-time collaboration in all aspects of the application, which was archived using [yjs](https://github.com/y-js/yjs).
+I am responsible for the web app and the nodejs application server. The web app is written in TypeScript, using React.js and material-ui for the UI components. One aspect was allowing for real-time collaboration in all aspects of the application, which was archived using [yjs](https://github.com/y-js/yjs).
 
 I am working on this project since August 2017 as part of my student assistant job at [Fraunhofer FIT](https://fit.fraunhofer.de/).
 
