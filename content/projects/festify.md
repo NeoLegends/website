@@ -100,4 +100,4 @@ Festify v3 proved to be our best release of Festify so far:
 - The code stays clean and we are able to ship new features in a speed that we weren't even dreaming about before!
 - We have used fit-html for two more projects by now, and we're seeing people from the internet using it for theirs as well.
 
-We invite you to [try it out for free](https://festify.rocks/) ☺️.
+We invite you to [try Festify out for free](https://festify.rocks/) ☺️.
