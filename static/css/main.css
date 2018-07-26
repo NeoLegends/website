@@ -34,7 +34,7 @@ img {
 }
 
 @media (max-width: 1024px) {
-    .flex-row {
+    .figure-row {
         flex-flow: column nowrap;
     }
 }
