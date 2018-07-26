@@ -62,7 +62,7 @@ What came out was a tool that sometimes ran a little unstable (especially on Win
 
     {{% figure
         title="Festify v1 Host for Windows"
-        alt="Screenshot of Festify v1 Host"
+        alt="Screenshot of Festify v1 Host on Windows"
         src="images/posts/festify/festify-v1-windows.png"
         class="figure figure-content"
     %}}
@@ -77,7 +77,7 @@ Not very solid, however, was our side of the code. Polymer doesn't really provid
 <div class="figure-row">
     {{% figure
         title="Festify v2 in Development"
-        alt="Festify v2 development"
+        alt="Picture of Festify v2 development"
         src="images/posts/festify/festify-v2-development.jpg"
         class="figure figure-content"
     %}}
