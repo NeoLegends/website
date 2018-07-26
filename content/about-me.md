@@ -15,7 +15,7 @@ draft: false
 
 - API-driven PWAs with Web Components, React or vanilla JS
 - Static page websites
-- Serverless backends and microservices
+- Serverless backends and microservices in various programming languages
 
 ## I focus on...
 
