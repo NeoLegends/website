@@ -4,10 +4,6 @@ date: 2018-07-26T18:37:43+02:00
 draft: false
 ---
 
-# Disclaimer / Impressum
-
-Everybody has to do it, so here's mine in German:
-
 ## Angaben gemäß § 5 TMG
 
 Moritz Gunz<br/>
