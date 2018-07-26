@@ -26,3 +26,21 @@ Back-End:
 - nodejs application server + Java report generator
 - nginx hosting
 - Docker orchestration
+
+## UI
+
+<div class="figure-row">
+    {{% figure
+        title="Project List"
+        alt="Screenshot of the OMP Project List"
+        src="images/posts/open-mobility-platform/omp-project-list.png"
+        class="figure figure-content"
+    %}}
+
+    {{% figure
+        title="XSD Editor Interface"
+        alt="Screenshot of the OMP XSD Editor"
+        src="images/posts/open-mobility-platform/omp-xsd-editor.png"
+        class="figure figure-content"
+    %}}
+</div>
