@@ -1,7 +1,7 @@
 ---
 title: "Open Mobility Platform"
 date: 2018-07-20T18:13:25+02:00
-draft: true
+draft: false
 tags: ["web-app", "react", "redux", "fraunhofer"]
 categories: ["project"]
 ---
