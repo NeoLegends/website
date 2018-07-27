@@ -2,8 +2,13 @@
 title: "Open Mobility Platform"
 date: 2018-07-20T18:13:25+02:00
 draft: false
-tags: ["web-app", "react", "redux", "fraunhofer"]
-categories: ["project"]
+tags:
+  - "web-app"
+  - "react"
+  - "redux"
+  - "fraunhofer"
+categories:
+  - "project"
 ---
 
 The goal is to create a tool to ease public transport companies the creation of technical specifications. It contains an XSD editor for creating the actual specification XSD, rich-text editors for writing the verbal documentation and generates a .docx or .pdf file.
