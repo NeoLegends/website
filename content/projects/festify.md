@@ -2,7 +2,7 @@
 title: "Festify"
 date: 2018-07-26T13:42:40+02:00
 draft: false
-tags: ["serverless", "full-stack", "firebase", "web-app", "fit-html"]
+tags: ["serverless", "full-stack", "firebase", "web-app", "fit-html", "web components"]
 categories: ["project"]
 ---
 
