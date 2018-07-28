@@ -40,9 +40,7 @@ img {
 .project-item {
     /*border: 1px solid black;*/
     list-style: none;
-    margin: .5em;
     text-align: center;
-    padding: .5em;
 }
 
 .project-item a {
@@ -65,12 +63,26 @@ img {
 }
 
 .project-list {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 1036px) {
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 1024px) {
     .figure-row {
         flex-flow: column nowrap;
+    }
+}
+
+@media (max-width: 704px) {
+    .project-list {
+        grid-template-columns: 1fr;
     }
 }
