@@ -15,11 +15,11 @@ description: Democratic social jukebox web app for Spotify
 img: images/posts/festify/festify-3x2-shot.png
 ---
 
-{{% figure
+{{< figure
     alt="Festify Logo"
     src="https://festify.rocks/img/festify-logo.svg"
     class="figure figure-post-header"
-%}}
+>}}
 
 [Festify](https://festify.rocks/) is a social jukebox web-app I developed with two friends from Düsseldorf. Fes­tify is a free Spo­tify-pow­ered app for the browser that al­lows you to let your guests choose which mu­sic should be played at your party.
 
@@ -62,19 +62,19 @@ Additionally, we wrote two desktop apps (MacOS and Windows) that would host the 
 What came out was a tool that sometimes ran a little unstable (especially on Windows, deploying .NET applications to clients is [HARD](https://www.google.de/search?q=.net+redistributable)!), but otherwise worked quite well. The backend was hosted on a small VPS at Strato. Our server was so small, we sometimes had to upgrade temporarily to a bigger plan in anticipation of special dates (New years eve, halloween, etc.) to save it from dying under the load.
 
 <div class="figure-row">
-    {{% figure
+    {{< figure
         title="Festify v1 Web App"
         alt="Screenshot of Festify v1 Web App"
         src="images/posts/festify/festify-v1-mobile.png"
         class="figure figure-content"
-    %}}
+    >}}
 
-    {{% figure
+    {{< figure
         title="Festify v1 Host for Windows"
         alt="Screenshot of Festify v1 Host on Windows"
         src="images/posts/festify/festify-v1-windows.png"
         class="figure figure-content"
-    %}}
+    >}}
 </div>
 
 Both desktop apps internally depended on libspotify. An ancient C-library that Spotify deprecated about a year after we released Festify. The lack of support caused a "degradation" in functionality of the library, rendering it more and more error-prone from day to day. The end result was that Festify was almost unusable by 2015/2016 because libspotify had so many issues at runtime. Additionally, managing a VPS without proper automation is time-consuming (especially in the face of OS updates) and we've had more downtime than we'd like to otherwise have.
@@ -85,19 +85,19 @@ Polymer and Web Components v0, together with the `paper-*`-elements proved to be
 Not very solid, however, was our side of the code. Polymer doesn't really provide any architecture patterns to keep your code clean in large applications. Mix in two-way data binding and you've got an excellent source of spaghetti code. We released v2 to the public, but never really got rid of all its bugs, and from some point in 2017 on had troubles introducing new features because the code was just so tightly coupled together.
 
 <div class="figure-row">
-    {{% figure
+    {{< figure
         title="Festify v2 in Development"
         alt="Picture of Festify v2 development"
         src="images/posts/festify/festify-v2-development.jpg"
         class="figure figure-content"
-    %}}
+    >}}
 
-    {{% figure
+    {{< figure
         title="Festify v2 Web App"
         alt="Screenshot of Festify v2 User Interface"
         src="images/posts/festify/festify-v2-ui.png"
         class="figure figure-content"
-    %}}
+    >}}
 </div>
 
 This is when I sat together with [Marcus Weiner](https://marcusweiner.de/) to develop a "v3" between christmas and new years eve of 2017. We were very convinced with the web components approach (Shadow DOM is a godsend! Miles better than anything I've ever seen in the React ecosystem.), but needed to improve on the code-structure side of things. We also wanted to get rid of the desktop apps, and be able to run a party just through the browser. Fortunately, Spotify had just released [a new SDK](https://developer.spotify.com/documentation/web-playback-sdk/) that allows playback through the browser and Google had just released their new DOM templating library, [lit-html](https://github.com/Polymer/lit-html), a month earlier. Over the course of another project of mine for [Fraunhofer FIT](https://fit.fraunhofer.de/) (see [Open Mobility Platform](/projects/open-mobility-platform)), I came in contact with [Redux](https://redux.js.org/) and immediately started loving it.
