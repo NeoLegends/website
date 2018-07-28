@@ -1,0 +1,17 @@
+<section class="container">
+  <h1 class="title">{{ .Title }}</h1>
+  <ul class="project-list">
+    {{ range .Paginator.Pages }}
+      <li class="project-item">
+        <a href="{{ .URL }}">
+          <img src="{{ .Params.img }}"
+               srcset="{{ .Params.img }} 1x, {{ .Params.img }}@2x 2x, {{ .Params.img }}@3x 3x"
+               aria-hidden="true">
+          <p>{{ .Title }}</p>
+          <span>{{ .Description }}</span>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>

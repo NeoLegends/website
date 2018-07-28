@@ -11,6 +11,8 @@ tags:
   - "web components"
 categories:
   - "project"
+description: Democratic social jukebox web app for Spotify
+img: images/posts/festify/festify-3x2-shot.png
 ---
 
 {{% figure

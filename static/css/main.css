@@ -3,6 +3,8 @@ img {
     object-fit: scale-down;
 }
 
+/* Figures inside posts */
+
 .figure-row {
     display: flex;
     justify-content: center;
@@ -31,6 +33,40 @@ img {
     display: block;
     margin: auto;
     width: 200px;
+}
+
+/* Portfolio List */
+
+.project-item {
+    /*border: 1px solid black;*/
+    list-style: none;
+    margin: .5em;
+    text-align: center;
+    padding: .5em;
+}
+
+.project-item a {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.project-item img, .project-item p, .project-item span {
+    width: 300px;
+}
+
+.project-item img {
+    box-shadow: 0 1px 2px 0px #ccc;
+    height: 200px;
+}
+
+.project-item span {
+    font-weight: normal;
+}
+
+.project-list {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 @media (max-width: 1024px) {
