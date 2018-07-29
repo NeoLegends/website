@@ -22,11 +22,12 @@ The project was built together with [Marcus Weiner](https://marcusweiner.de/). W
 JAM-Stack architecture
 
 Front-End:
+
 - fit-html (Web Components + Redux)
-- TypeScript
 - Material Design
 
 Back-End:
+
 - JWT-based authentication and user management using [GoTrue](https://github.com/netlify/GoTrue) (golang) and a radius credential management server ([radau](https://github.com/FactoryCampus/radau), also golang)
 - Docker orchestration
 
