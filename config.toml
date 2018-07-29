@@ -1,4 +1,4 @@
-baseURL = "https://moritzgunz.de/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Moritz Gunz"
 languagecode = "en"
@@ -14,7 +14,6 @@ keywords = "web, developer, full, stack, personal"
 footercontent = "🌈"
 hideCredits = true
 hideCopyright = true
-custom_css = ["css/main.css"]
 
 [[params.social]]
 name = "Github"
