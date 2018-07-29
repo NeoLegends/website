@@ -1,0 +1,23 @@
+.figure-row
+  display: flex
+  justify-content: center
+
+.figure
+  align-items: center
+  display: flex
+  flex-flow: column
+
+  figcaption
+    text-align: center
+
+  &.figure-content
+    img
+      height: 300px
+
+  &.figure-post-header
+    img
+      height: 128px
+
+@media (max-width: 1024px)
+  .figure-row
+    flex-flow: column nowrap
