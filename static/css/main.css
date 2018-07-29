@@ -43,7 +43,7 @@ img {
 }
 
 .project-item, .project-item * {
-    width: 300px;
+    width: 100%;
 }
 
 .project-item a {
@@ -54,7 +54,6 @@ img {
 
 .project-item img {
     box-shadow: 0 1px 2px 0px #ccc;
-    height: 200px;
 }
 
 .project-item span {
@@ -63,7 +62,7 @@ img {
 
 .project-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2em;
     justify-items: center;
     list-style: none;
@@ -75,15 +74,19 @@ img {
     .figure-row {
         flex-flow: column nowrap;
     }
+
+    .project-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
-@media (max-width: 1003px) {
+@media (max-width: 756px) {
     .project-list {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 671px) {
+@media (max-width: 512px) {
     .project-list {
         grid-template-columns: 1fr;
     }
