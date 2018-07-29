@@ -80,7 +80,7 @@ img {
     }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 768px) {
     .project-list {
         grid-template-columns: 1fr 1fr;
     }
