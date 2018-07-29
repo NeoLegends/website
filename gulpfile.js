@@ -20,6 +20,7 @@ const files = {
         'themes/coder/static/css/style.min.css',
     ],
     dest: './public',
+    images: 'static/images/**/*.{png,jpg,jpeg}',
     postHeros: 'static/images/**/*3x2-shot.{jpg,png}',
     site: [
         'content/**/*',
@@ -74,10 +75,11 @@ gulp.task('hugo-compress', () => {
 gulp.task('hugo', gulp.series('hugo-build', 'hugo-compress'));
 
 gulp.task('imgs', () => {
-    return gulp.src(files.postHeros, { base: '.' })
+    const heroImages = gulp.src(files.postHeros)
         .pipe(responsive({
             '**/*.{jpg,png}': [{
                 width: 300,
+                rename: { suffix: '@1x' },
             }, {
                 width: 600,
                 rename: { suffix: '@2x' },
@@ -88,8 +90,11 @@ gulp.task('imgs', () => {
         }, {
             quality: 70,
             withMetadata: false,
-        }))
-        .pipe(gulp.dest(files.dest))
+        }));
+    const otherImages = gulp.src(files.images);
+
+    return merge(heroImages, otherImages)
+        .pipe(gulp.dest(`${files.dest}/images`))
         .pipe(bsync.stream());
 });
 
