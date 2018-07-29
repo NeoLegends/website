@@ -17,6 +17,7 @@ const files = {
         'node_modules/normalize.css/normalize.css',
         'themes/coder/static/css/style.min.css',
     ],
+    dest: './public',
     postHeros: 'static/images/**/*3x2-shot.{jpg,png}',
     site: [
         'content/**/*',
@@ -38,7 +39,7 @@ gulp.task('css', () => {
             autoprefixer({ browsers: ['last 1 version'] }),
             cssnano(),
         ]))
-        .pipe(gulp.dest('public'))
+        .pipe(gulp.dest(files.dest))
         .pipe(bsync.stream());
 });
 
@@ -72,7 +73,7 @@ gulp.task('imgs', () => {
             quality: 70,
             withMetadata: false,
         }))
-        .pipe(gulp.dest('public'))
+        .pipe(gulp.dest(files.dest))
         .pipe(bsync.stream());
 });
 
@@ -83,7 +84,7 @@ gulp.task('watch', gulp.series(gulp.task('all'), () => {
         ui: false,
         open: false,
         server: {
-            baseDir: 'public'
+            baseDir: files.dest
         }
     });
 
