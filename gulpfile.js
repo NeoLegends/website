@@ -5,6 +5,7 @@ const browsersync = require('browser-sync');
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const htmlmin = require('gulp-htmlmin');
+const inlineSrc = require('gulp-inline-source');
 const postCss = require('gulp-postcss');
 const responsive = require('gulp-responsive');
 const sass = require('gulp-sass');
@@ -60,8 +61,10 @@ gulp.task('hugo-build', (cb) => {
 
 gulp.task('hugo-compress', () => {
     return gulp.src(`${files.dest}/**/*.html`)
+        .pipe(inlineSrc({ rootpath: files.dest }))
         .pipe(htmlmin({
             collapseWhitespace: true,
+            minifyCSS: false,
             sortAttributes: true,
             sortClassName: true,
         }))
@@ -90,7 +93,7 @@ gulp.task('imgs', () => {
         .pipe(bsync.stream());
 });
 
-gulp.task('all', gulp.parallel('css', 'imgs', 'hugo'));
+gulp.task('all', gulp.series(gulp.parallel('css', 'imgs'), 'hugo'));
 
 gulp.task('watch-setup', () => {
     bsync.init({
