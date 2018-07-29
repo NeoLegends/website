@@ -92,7 +92,7 @@ gulp.task('imgs', () => {
 
 gulp.task('all', gulp.parallel('css', 'imgs', 'hugo'));
 
-gulp.task('watch', gulp.series(gulp.task('all'), () => {
+gulp.task('watch-setup', () => {
     bsync.init({
         ui: false,
         open: false,
@@ -104,4 +104,6 @@ gulp.task('watch', gulp.series(gulp.task('all'), () => {
     gulp.watch(files.css, gulp.task('css'));
     gulp.watch(files.postHeros, gulp.task('imgs'));
     gulp.watch(files.site, gulp.task('hugo'));
-}));
+});
+
+gulp.task('watch', gulp.series('all', 'watch-setup'));
