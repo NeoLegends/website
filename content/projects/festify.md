@@ -1,6 +1,6 @@
 ---
 title: "Festify"
-date: 2018-07-26T13:42:40+02:00
+date: 2018-07-28T13:42:40+02:00
 draft: false
 tags:
   - "serverless"
