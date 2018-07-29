@@ -4,7 +4,11 @@
     {{ range .Paginator.Pages }}
       <li class="project-item">
         <a href="{{ .URL }}">
-          <img src="{{ .Params.img }}" aria-hidden="true">
+          {{ $name := .Params.img }}
+          {{ $ext := .Params.img_type }}
+          <img src="{{ $name }}@1x.{{ $ext }}"
+               srcset="{{ $name }}@1x.{{ $ext }} 1x, {{ $name }}@2x.{{ $ext }} 2x, {{ $name }}@3x.{{ $ext }} 3x"
+               aria-hidden="true">
           <p>{{ .Title }}</p>
           <span>{{ .Description }}</span>
         </a>

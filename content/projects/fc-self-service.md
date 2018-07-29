@@ -10,7 +10,8 @@ tags:
 categories:
   - "project"
 description: Manage VLANs and WPA Enterprise Wi-Fi credentials
-img: images/posts/fc-self-service/fc-self-service-3x2-shot.jpg
+img: images/posts/fc-self-service/fc-self-service-3x2-shot
+img_type: jpg
 ---
 
 We created an app that allows tenants of co-working spaces to manage their own Wi-Fi credentials. Each tenant also gets an own VLAN for his devices.

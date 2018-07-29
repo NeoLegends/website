@@ -8,7 +8,8 @@ tags:
 categories:
   - "project"
 description: Lightweight library for creating web components with lit-html and Redux
-img: images/posts/fit-html/fit-html-3x2-shot.jpg
+img: images/posts/fit-html/fit-html-3x2-shot
+img_type: jpg
 ---
 
 [fit-html](https://github.com/Festify/fit-html) is a lightweight librarry for creating web components that render with lit-html and get their data from a Redux store.

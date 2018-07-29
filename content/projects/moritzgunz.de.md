@@ -8,7 +8,8 @@ tags:
 categories:
   - "project"
 description: Sleek home page with contact information and a portfolio
-img: images/posts/moritzgunz.de/moritzgunz-3x2-shot.png
+img: images/posts/moritzgunz.de/moritzgunz-3x2-shot
+img_type: png
 ---
 
 This homepage is a static page that was made using the [Hugo](https://gohugo.io/) static page generator. Special emphasis was placed on the loading speed of the site as well as the simple design. The site, of course, also features a responsive, mobile-first, design.
