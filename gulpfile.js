@@ -70,7 +70,7 @@ gulp.task('hugo-compress', () => {
             sortClassName: true,
         }))
         .pipe(gulp.dest(files.dest));
-})
+});
 
 gulp.task('hugo', gulp.series('hugo-build', 'hugo-compress'));
 
