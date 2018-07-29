@@ -1,7 +1,7 @@
 ---
 title: "moritzgunz.de"
 date: 2018-07-29T19:50:00+02:00
-draft: true
+draft: false
 tags:
   - "static page"
   - "hugo"
