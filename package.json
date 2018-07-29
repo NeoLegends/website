@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "browser-sync": "^2.24.6",
+    "cssnano": "^4.0.4",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-responsive": "^2.11.0",
+    "gulp-sass": "^4.0.1",
+    "hugo-bin": "^0.29.0",
+    "merge-stream": "^1.0.1",
+    "normalize.css": "^8.0.0",
+    "postcss-import-url": "^3.0.4"
+  }
+}
