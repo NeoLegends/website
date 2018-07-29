@@ -4,6 +4,7 @@ const cssnano = require('cssnano');
 const browsersync = require('browser-sync');
 const gulp = require('gulp');
 const concat = require('gulp-concat');
+const htmlmin = require('gulp-htmlmin');
 const postCss = require('gulp-postcss');
 const responsive = require('gulp-responsive');
 const sass = require('gulp-sass');
@@ -43,7 +44,7 @@ gulp.task('css', () => {
         .pipe(bsync.stream());
 });
 
-gulp.task('hugo', (cb) => {
+gulp.task('hugo-build', (cb) => {
     process.env.NODE_ENV = 'development';
 
     return spawn(hugoBin, [], { stdio: 'inherit' }).on('close', (code) => {
@@ -56,6 +57,18 @@ gulp.task('hugo', (cb) => {
         }
     });
 });
+
+gulp.task('hugo-compress', () => {
+    return gulp.src(`${files.dest}/**/*.html`)
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            sortAttributes: true,
+            sortClassName: true,
+        }))
+        .pipe(gulp.dest(files.dest));
+})
+
+gulp.task('hugo', gulp.series('hugo-build', 'hugo-compress'));
 
 gulp.task('imgs', () => {
     return gulp.src(files.postHeros, { base: '.' })
