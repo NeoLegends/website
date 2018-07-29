@@ -20,7 +20,7 @@ const files = {
         'themes/coder/static/css/style.min.css',
     ],
     dest: './public',
-    images: 'static/images/**/*.{png,jpg,jpeg}',
+    images: 'static/images/**/*',
     postHeros: 'static/images/**/*3x2-shot.{jpg,png}',
     site: [
         'content/**/*',
