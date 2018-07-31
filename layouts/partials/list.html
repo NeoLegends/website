@@ -4,7 +4,7 @@
     {{ range .Paginator.Pages }}
       <li class="project-item">
         <a href="{{ .URL }}">
-          {{ with .Resources.GetMatch "*3x2-shot*" }}
+          {{ with .Resources.GetMatch "*hero*" }}
             {{ $1x := .Resize "472x" }}
             {{ $2x := .Resize "944x" }}
             {{ $3x := .Resize "1416x" }}
