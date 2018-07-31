@@ -4,7 +4,7 @@ date: 2018-07-26T14:20:17+02:00
 draft: false
 ---
 
-{{% profile %}}
+{{< profile >}}
 
 ## I am...
 
