@@ -16,7 +16,7 @@ img_type: png
 
 We created an app that allows tenants of co-working spaces to manage their own Wi-Fi credentials. Each tenant also gets an own VLAN for his devices.
 
-The app was build on behalf of [Factory Campus GmbH & Co. KG](https://factorycampus.de/). I implemented it together with [Marcus Weiner](https://marcusweiner.de/). We were both working on the front- and back-end.
+The app was build on behalf of [Factory Campus GmbH & Co. KG](https://factorycampus.de/). I implemented it together with [Marcus Weiner](https://marcusweiner.de/). We were both responsible for the front- and back-end.
 
 ## Technical details
 
