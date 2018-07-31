@@ -21,7 +21,6 @@ const files = {
     ],
     dest: './public',
     images: 'static/images/**/*',
-    postHeros: 'static/images/**/*3x2-shot.{jpg,png}',
     site: [
         'content/**/*',
         'layouts/**/*.html',
@@ -74,26 +73,36 @@ gulp.task('hugo-compress', () => {
 
 gulp.task('hugo', gulp.series('hugo-build', 'hugo-compress'));
 
-gulp.task('imgs', () => {
-    const heroImages = gulp.src(files.postHeros)
+gulp.task('imgs', (cb) => {
+    return gulp.src(files.images)
         .pipe(responsive({
-            '**/*.{jpg,png}': [{
-                width: 300,
+            '**/profile.jpg': [{
+                width: 200,
                 rename: { suffix: '@1x' },
             }, {
-                width: 600,
+                width: 400,
                 rename: { suffix: '@2x' },
             }, {
-                width: 900,
+                width: 600,
                 rename: { suffix: '@3x' },
             }],
+            '**/favicon.png': [{
+                width: 16,
+                rename: {
+                    basename: 'favicn',
+                    suffix: '-16x16',
+                },
+            }, {
+                width: 32,
+                rename: {
+                    basename: 'favicn',
+                    suffix: '-32x32',
+                },
+            }]
         }, {
             quality: 70,
             withMetadata: false,
-        }));
-    const otherImages = gulp.src(files.images);
-
-    return merge(heroImages, otherImages)
+        }))
         .pipe(gulp.dest(`${files.dest}/images`))
         .pipe(bsync.stream());
 });
@@ -110,7 +119,7 @@ gulp.task('watch-setup', () => {
     });
 
     gulp.watch(files.css, gulp.task('css'));
-    gulp.watch(files.postHeros, gulp.task('imgs'));
+    gulp.watch(files.images, gulp.task('imgs'));
     gulp.watch(files.site, gulp.task('hugo'));
 });
 

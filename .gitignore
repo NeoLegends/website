@@ -62,3 +62,4 @@ typings/
 
 # Hugo Output
 public/
+resources/_gen

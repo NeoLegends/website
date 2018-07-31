@@ -10,8 +10,6 @@ tags:
 categories:
   - "project"
 description: Technical specification editor for the public transportation industry
-img: images/posts/open-mobility-platform/omp-3x2-shot
-img_type: png
 ---
 
 The goal is to create a tool to ease public transport companies the creation of technical specifications. It contains an XSD editor for creating the actual specification XSD and rich-text editors for writing the verbal documentation. It outputs a .docx or .pdf report file.
@@ -41,14 +39,14 @@ Back-End:
     {{< figure
         title="Project List"
         alt="Screenshot of the OMP Project List"
-        src="images/posts/open-mobility-platform/omp-project-list.png"
+        src="projects/open-mobility-platform/omp-project-list.png"
         class="figure figure-content"
     >}}
 
     {{< figure
         title="XSD Editor Interface"
         alt="Screenshot of the OMP XSD Editor"
-        src="images/posts/open-mobility-platform/omp-xsd-editor.png"
+        src="projects/open-mobility-platform/omp-xsd-editor.png"
         class="figure figure-content"
     >}}
 </div>

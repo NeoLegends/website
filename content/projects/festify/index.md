@@ -12,8 +12,6 @@ tags:
 categories:
   - "project"
 description: Democratic social jukebox web app for Spotify
-img: images/posts/festify/festify-3x2-shot
-img_type: png
 ---
 
 {{< figure
@@ -66,14 +64,14 @@ What came out was a tool that sometimes ran a little unstable (especially on Win
     {{< figure
         title="Festify v1 Web App"
         alt="Screenshot of Festify v1 Web App"
-        src="images/posts/festify/festify-v1-mobile.png"
+        src="projects/festify/festify-v1-mobile.png"
         class="figure figure-content"
     >}}
 
     {{< figure
         title="Festify v1 Host for Windows"
         alt="Screenshot of Festify v1 Host on Windows"
-        src="images/posts/festify/festify-v1-windows.png"
+        src="projects/festify/festify-v1-windows.png"
         class="figure figure-content"
     >}}
 </div>
@@ -89,14 +87,14 @@ Not very solid, however, was our side of the code. Polymer doesn't really provid
     {{< figure
         title="Festify v2 in Development"
         alt="Picture of Festify v2 development"
-        src="images/posts/festify/festify-v2-development.jpg"
+        src="projects/festify/festify-v2-development.jpg"
         class="figure figure-content"
     >}}
 
     {{< figure
         title="Festify v2 Web App"
         alt="Screenshot of Festify v2 User Interface"
-        src="images/posts/festify/festify-v2-ui.png"
+        src="projects/festify/festify-v2-ui.png"
         class="figure figure-content"
     >}}
 </div>
