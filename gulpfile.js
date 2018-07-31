@@ -73,7 +73,7 @@ gulp.task('hugo-compress', () => {
 
 gulp.task('hugo', gulp.series('hugo-build', 'hugo-compress'));
 
-gulp.task('imgs', (cb) => {
+gulp.task('imgs', () => {
     return gulp.src(files.images)
         .pipe(responsive({
             '**/profile.jpg': [{
