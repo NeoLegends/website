@@ -35,6 +35,6 @@ Back-End:
 {{< figure
     title="'Generate Wi-Fi Credentials' Screen"
     alt="Screenshot of the 'Generate Wi-Fi Credentials' view in the web app"
-    src="projects/fc-self-service/hero.png"
+    src="hero.png"
     class="figure figure-content"
 >}}

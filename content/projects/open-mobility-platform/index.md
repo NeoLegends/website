@@ -39,14 +39,14 @@ Back-End:
     {{< figure
         title="Project List"
         alt="Screenshot of the OMP Project List"
-        src="projects/open-mobility-platform/omp-project-list.png"
+        src="omp-project-list.png"
         class="figure figure-content"
     >}}
 
     {{< figure
         title="XSD Editor Interface"
         alt="Screenshot of the OMP XSD Editor"
-        src="projects/open-mobility-platform/omp-xsd-editor.png"
+        src="omp-xsd-editor.png"
         class="figure figure-content"
     >}}
 </div>
