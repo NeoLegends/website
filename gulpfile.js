@@ -38,7 +38,10 @@ gulp.task('css', () => {
         .pipe(concat('css/main.css'))
         .pipe(postCss([
             resolveImports(),
-            autoprefixer({ browsers: ['last 1 version'] }),
+            autoprefixer({
+                browsers: ['last 1 version'],
+                grid: true,
+            }),
             cssnano(),
         ]))
         .pipe(gulp.dest(files.dest))
