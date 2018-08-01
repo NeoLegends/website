@@ -68,6 +68,7 @@ gulp.task('hugo-compress', () => {
         .pipe(htmlmin({
             collapseWhitespace: true,
             minifyCSS: false,
+            minifyJS: true,
             sortAttributes: true,
             sortClassName: true,
         }))
