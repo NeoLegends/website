@@ -122,7 +122,7 @@ gulp.task('watch-setup', () => {
         }
     });
 
-    gulp.watch(files.css, gulp.task('css'));
+    gulp.watch(files.css, gulp.series('css', 'hugo'));
     gulp.watch(files.images, gulp.task('imgs'));
     gulp.watch(files.site, gulp.task('hugo'));
 });
