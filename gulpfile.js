@@ -14,7 +14,7 @@ const merge = require('merge-stream');
 const resolveImports = require('postcss-import-url');
 
 const files = {
-    css: 'static/css/main.sass',
+    css: 'static/css/*.sass',
     externalCss: [
         'node_modules/normalize.css/normalize.css',
         'themes/coder/static/css/style.min.css',
