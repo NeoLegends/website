@@ -14,5 +14,8 @@
     "merge-stream": "^1.0.1",
     "normalize.css": "^8.0.0",
     "postcss-import-url": "^3.0.4"
+  },
+  "scripts": {
+    "serve": "gulp watch"
   }
 }
