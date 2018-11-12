@@ -10,6 +10,8 @@ Moritz Gunz<br/>
 Rudolfstraße 56<br/>
 52070 Aachen
 
+Umsatzsteuer-Identifikationsnummer gemäß §27a UStG: DE 320 270 740
+
 ## Haftungsausschluss:
 
 ### Haftung für Inhalte
