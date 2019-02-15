@@ -16,7 +16,7 @@ const resolveImports = require('postcss-import-url');
 const files = {
     css: 'static/css/*.sass',
     externalCss: [
-        'node_modules/normalize.css/normalize.css',
+        'node_modules/modern-normalize/modern-normalize.css',
         'themes/coder/static/css/style.min.css',
     ],
     dest: './public',
