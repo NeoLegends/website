@@ -1,3 +1,9 @@
 [build]
-  command = "gulp all"
-  publish = "public"
+command = "gulp all"
+publish = "public"
+
+[redirects]
+from = "/delay"
+to = "https://httpbingo.org/delay/10"
+status = 200
+force = true
