@@ -2,7 +2,7 @@
 command = "gulp all"
 publish = "public"
 
-[redirects]
+[[redirects]]
 from = "/delay"
 to = "https://httpbingo.org/delay/10"
 status = 200
