@@ -21,16 +21,6 @@ weight = 1
 url = "https://github.com/NeoLegends"
 
 [[params.social]]
-name = "Twitter"
-weight = 2
-url = "https://twitter.com/TheNeoLegends"
-
-[[params.social]]
 name = "E-Mail"
 weight = 3
 url = "mailto:yo@moritzgunz.de"
-
-[[menu.main]]
-name = "Projects"
-weight = 1
-url = "/projects/"
